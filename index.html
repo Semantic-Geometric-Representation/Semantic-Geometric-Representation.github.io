@@ -235,7 +235,7 @@
 
 
 <section class="section">
-  <div class="container is-max-widescreen">
+  <div class="container is-max-desktop">
 
     <div class="rows">
 
@@ -257,81 +257,149 @@
             between 2D semantics and 3D geometry information. Finally, based on the output 
             representations from the SA blocks, we predict the robotic action to execute.
           </p>
-        </br>
-        </br>
-
-        <!--/ Re-rendering. -->
-
-        <h2 class="title is-3">Results</h2>
-
-        <h3 class="title is-4">Simulation Results</h3>
-
-        <div class="columns">
-          <div class="column has-text-centered">
-            <h3 class="title is-5">One Multi-Task Transformer</h3>
-
-            Trained with
-            <div class="select is-small">
-              <select id="single-menu-demos" onchange="updateSingleVideo()">
-              <option value="10">10</option>
-              <option value="100" selected="selected">100</option>
-              </select>
-            </div>
-            demos per task, evaluated on 
-            <div class="select is-small">     
-              <select id="single-menu-tasks" onchange="updateSingleVideo()">
-              <option value="open_drawer" selected="selected">open drawer</option>
-              <option value="slide_block">slide block</option>
-              <option value="sweep_to_dustpan">sweep to dustpan</option>
-              <option value="meat_off_grill">meat off grill</option>
-              <option value="turn_tap">turn tap</option>
-              <option value="put_in_drawer">put in drawer</option>
-              <option value="close_jar">close jar</option>
-              <option value="drag_stick">drag stick</option>
-              <option value="stack_blocks">stack blocks</option>
-              <option value="screw_bulb">screw bulb</option>
-              <option value="put_in_safe">put in safe</option>
-              <option value="place_wine">place wine</option>
-              <option value="put_in_cupboard">put in cupboard</option>
-              <option value="sort_shape">sort shape</option>
-              <option value="push_buttons">push buttons</option>
-              <option value="insert_peg">insert peg</option>
-              <option value="stack_cups">stack cups</option>
-              <option value="place_cups">place cups</option>
-              </select>
-            </div>
-            episode
-            <div class="select is-small">
-              <select id="single-menu-instances" onchange="updateSingleVideo()">
-              <option value="s1">01</option>
-              <option value="s2" selected="selected">02</option>
-              <option value="s3">03</option>
-              <option value="s4">04</option>
-              <option value="s5">05</option>
-              </select>
-            </div>
-            <br/>
-            <br/>
-
-            <video id="multi-task-result-video"
-                   muted
-                   autoplay
-                   loop
-                   width="100%">
-              <source src="media/results/sim_rollouts/n10-open_drawer-s2.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
-        </br>
-        </br>
 
       </div>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
 
+    <h2 class="title is-3">Real-Robot Results</h2>
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-5">Put Block</h3>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./media/real_robot/block.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-5">Open Drawer</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./media/real_robot/drawer.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-5">Hit Ball</h3>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./media/real_robot/stick.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-5">Pick Apple</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./media/real_robot/apple.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-5">Push Cup</h3>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./media/real_robot/cup.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-5">Put Banana</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./media/real_robot/banana.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-5">Press Handsan</h3>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./media/real_robot/handsan.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <h2 class="title is-5">Put Pen</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./media/real_robot/pen.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Matting. -->
+  </div>
+</section>
 
 
 </body>
